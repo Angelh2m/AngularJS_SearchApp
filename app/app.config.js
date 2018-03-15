@@ -1,5 +1,8 @@
+// [ MAIN MODULE ]
 angular.module('phonecatApp')
     .config(['$locationProvider' ,'$routeProvider',
+
+    // Router settings
     function config($locationProvider, $routeProvider) {
       $locationProvider.hashPrefix('!');
 
@@ -12,4 +15,5 @@ angular.module('phonecatApp')
         }).
         otherwise('/phones');
     }
+
   ]);

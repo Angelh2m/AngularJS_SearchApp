@@ -1,9 +1,8 @@
 
 // Register `phoneList` component, along with its associated controller and template
 
-angular.module('phoneList').
-  
-component('phoneList', {
+angular.module('phoneList')
+    .component('phoneList', {
     
     templateUrl: 'phone-list/phone-list.template.html',
     controller: ['Phone',
@@ -13,7 +12,7 @@ component('phoneList', {
         this.orderProp = 'age';
       }
     ]
-    
+
   });
 
 // angular.module('phoneList')
